@@ -9,7 +9,7 @@ CORS(app)
 # Connecting to the Database
 connection = pymysql.connect(host="localhost", user="phpmyadmin", passwd="raspberry", database="phpmyadmin")
 
-
+# Creating Routes using flask_cors
 @app.route('/addUser', methods=['POST'])
 def add_user():
     user = None
